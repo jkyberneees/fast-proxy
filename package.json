@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha test/*.test.js",
-    "bench": "( node benchmark/service.js & node benchmark/gateway.js & (sleep 5 && wrk -t8 -c8 -d30s http://127.0.0.1:8080/service/hi) )"
+    "bench": "( node benchmark/service.js & node benchmark/fast-proxy-restana-gateway.js & (sleep 5 && wrk -t8 -c8 -d30s http://127.0.0.1:8080/service/hi) )"
   },
   "repository": {
     "type": "git",
